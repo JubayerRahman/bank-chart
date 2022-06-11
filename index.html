@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- bootstrap css LINKS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Jubayer savings</title>
+    <link rel="icon" type="image/x-icon" href="./portfolio_Image2.png" >
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container loginSection" id="loginSection">
+    <div class="row">
+    <h1 class="text-center welcome col-md-12 col-12">Welcome to the savings Chart</h1>
+    </div>
+    <div class="row">
+    <div class="container loginForm col-md-12 col-12">
+
+        <h3>Plese enter your Info</h3>
+       
+            <div class="mb-3">
+              <input id="name" type="email" class="form-control" placeholder="Email" required>
+            </div>
+            <div class="mb-3">
+              <input type="password" class="form-control" placeholder="Password" required>
+            </div>
+            <button id="login" class="btn btn-success">Submit</button>
+         
+    </div>
+    </div>
+    </div>
+
+    <!-- End of Log in Area -->
+    <!-- Starting of Transaction Area -->
+
+    <div class="container" id="transaction-area">
+        <h1 id="userName">Transaction Area</h1>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="diposite">
+                <h5>Diposite</h5>
+                <h2>$ <span id="dipositView">00</span></h2>
+                </div>
+            </div>
+            <div class="col-md-4 ">
+                <div class="withdraw">
+                <h5>Withdraw</h5>
+                <h2>$ <span id="Withdrawview">00</span></h2>
+            </div>
+            </div>
+            <div class="col-md-4 ">
+                <div class="balance">
+                <h5>Balance</h5>
+                <h2>$ <span id="balanceView">200</span></h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="row inputSection">
+            <div class="col-md-6">
+                <div class="dipositeSection">
+                    <h2>Diposite</h2>
+                <div class="mb-3">
+                    <input id="dipositAmmount" type="Text" class="form-control" placeholder="$ Enter the amount you want to diposite">
+                  </div>
+                  <button class="btn btn-success" id="dipositButton">Diposite</button>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="withdrawSection">
+                    <h2>Withdraw</h2>
+                    <div class="mb-3">
+                        <input id="withdrawAmount" type="Text" class="form-control" placeholder="$ Enter the amount you want to Withdraw">
+                      </div>
+                      <button id="withdraw-button" class="btn btn-success">Withdraw</button>
+                    </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <!-- js link -->
+    <script src="./seript.js"></script>
+
+    <!-- Bootstrap Js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
